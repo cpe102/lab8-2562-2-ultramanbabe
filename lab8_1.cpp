@@ -46,9 +46,10 @@ int main(){
 	cout << fixed << setprecision(2);
 		
 	while(newBalance > 0){
-		interest = loan * (rate/1000);
+		interest = loan * (rate/100);
 		total = loan + interest;
 		newBalance = total - pay;
+		
 
 		cout << setw(13) << year;
 		cout << setw(13) << loan;
@@ -61,11 +62,8 @@ int main(){
 		cout << setw(13) << pay;
 		cout << setw(13) << newBalance;
 		cout << "\n";
+		loan = newBalance;
 		year++;
 	}
-	
-
-
-	
 	return 0;
 }

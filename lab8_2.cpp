@@ -5,12 +5,13 @@ using namespace std;
 void printO(int x, int y){
 	if(x <= 0 || y <= 0){
 		cout << "Invalid Input";
-	}
+	}else{
 	for(int i = 0; i < x; i++){
 		for(int j = 0; j < y; j++){
 			cout << "O";
 		}
-		cout << "\n";
+	cout << "\n";
+		}
 	}
 }
 
